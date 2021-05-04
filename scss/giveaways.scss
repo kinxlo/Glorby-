@@ -1,0 +1,142 @@
+@import './_reset';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+.span-col-2 {
+  grid-column: span 2 / auto;
+}
+
+.cc-item-container {
+  position: relative;
+  width: 90%;
+  height: 20rem;
+
+  .cc-store-img-container {
+    // border: 1px solid red;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+    }
+  }
+}
+
+.cc-dropdown-list {
+  // border: 1px solid red;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  
+  a {
+    color: $color-three !important;
+    font-size: 0.7rem;
+    font-weight: normal;
+    transition: all ease 0.7s;
+
+    &:hover {
+      border-bottom: 1.5px solid $color-two !important;
+    }
+  }
+}
+
+.cc-banner {
+  .cc-banner-item {
+    width: 50%;
+    height: 25rem;
+
+    img {
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+.cc-sub-title {
+  // word-spacing: 0.5rem !important;
+  letter-spacing: 0.23rem !important;
+}
+
+// ====================================================================
+
+/* DESKTOP VIEW */
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .cc-dropdown-list {
+    width: 50%;
+    a {
+      color: $color-three !important;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .span-col-2 {
+    grid-column: span 2 / auto;
+  }
+
+  .cc-item-container {
+    position: relative;
+    width: initial;
+
+    .cc-store-img-container {
+      // border: 1px solid red;
+      display: flex;
+      width: 50%;
+      height: 50%;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  .cc-item-container {
+    position: relative;
+    width: initial;
+
+    .cc-store-img-container {
+      // border: 1px solid red;
+      display: flex;
+      width: 50%;
+      height: 80%;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+}
