@@ -1,1 +1,1 @@
-https://kinxlo.github.io/Glorby/
+https://kinxlo.github.io/Glorby-/
